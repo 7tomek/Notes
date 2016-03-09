@@ -1,0 +1,20 @@
+1. Adding the Repository to CocoaPods
+pod repo add <NAME REPO> <https://... .git>
+
+2. Creating a Private Pod
+pod create spec <NAME PRIVATE POD>
+
+3. Pushing the Spec to the Specs Repository
+pod repo push <NAME REPO> <NAME SPEC>.podspec
+
+Using the Private Pod
+
+source '<PRIVATE POD https://... .git'
+source 'https://github.com/CocoaPods/Specs.git'
+ 
+platform :ios, '8.0'
+ 
+target '<APP NAME>' do
+  pod '<NAME SPEC POD>'
+end
+
