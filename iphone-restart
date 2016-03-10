@@ -1,0 +1,4 @@
+brew install -v --fresh automake autoconf libtool wget libimobiledevice
+
+idevicediagnostics restart
+
