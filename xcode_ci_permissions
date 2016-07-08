@@ -1,0 +1,2 @@
+# unlock keychain for ci.
+security unlock-keychain -p YOUR_PASSWORD ~/Library/Keychains/login.keychain
